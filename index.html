@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Devto Challenge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!--Navbar-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devto Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <!--Burger menu for table-mobile-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Boton de Icono Devto-->
-      <a class="navbar-brand" href="#"><img style="width: 2rem; height: 2rem;" src="./images/svgexport-15.svg" alt="DevTo__Icon"></a>
-      <!--Search bar-->
-      <div class="collapse navbar-collapse d-none d-md-block d-lg-block d-xxl-block" id="navbarSupportedContent">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-      <!--Button right on navbar-->
+      <!--Left icon and burger-->
       <div class="d-flex">
-        <button type="button" class="btn btn-link d-none d-md-block d-lg-block d-xxl-block">Link</button>
-        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <!--Burger menu for table-mobile-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Boton de Icono Devto-->
+        <a class="navbar-brand mx-2" href="#"><img style="width: 2rem; height: 2rem;" src="./images/svgexport-15.svg"
+            alt="DevTo__Icon"></a>
+
+        <!--Search bar-->
+        <div style="width: 30rem;">
+          <div class="d-none d-md-block" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <!--<button class="btn btn-outline-success" type="submit">Search</button>-->
+            </form>
+          </div>
+        </div>
+
       </div>
+
+
+
+      <!--Buttons right on navbar-->
+      <div>
+        <div class="d-flex">
+          <button type="button" class="btn btn-link d-none d-md-block d-lg-block d-xxl-block">Link</button>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+        </div>
+      </div>
+
     </div>
   </nav>
   <!--Inicio de container-->
   <div class="container">
     <div class="row">
       <!--Columna 1-->
-      <div class="col d-none d-md-block d-lg-block d-xxl-block"></div>
+      <div class="col d-sm-none d-md-block d-lg-block d-xxl-block"></div>
       <!--Columna 2-->
       <div class="col">
-        <div
-      class="card w-md-50 rounded-4 overflow-hidden border-0 shadow"
-    >
-      <div class="card-body">
-        <h5 class="card-title text-center fw-bold fs-5">Order Summary</h5>
-        <p class="card-text text-center text-muted fs-6">
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
-        <div
-          class="d-flex align-items-center rounded bg-very-pale-blue p-3 gap-3 mb-3"
-        >
-          <img src="images/icon-music.svg" alt="" />
-          <div>
-            <strong>Annual Plan</strong>
-            <span>$59.99/year</span>
+        <div class="card w-md-50 rounded-4 overflow-hidden border-0 shadow">
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold fs-5">Order Summary</h5>
+            <p class="card-text text-center text-muted fs-6">
+              You can now listen to millions of songs, audiobooks, and podcasts on
+              any device anywhere you like!
+            </p>
+            <div class="d-flex align-items-center rounded bg-very-pale-blue p-3 gap-3 mb-3">
+              <img src="images/icon-music.svg" alt="" />
+              <div>
+                <strong>Annual Plan</strong>
+                <span>$59.99/year</span>
+              </div>
+              <a href="#">Change</a>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <button class="btn btn-bright-blue">Proceed to Payment</button>
+              <button class="btn">Cancel Order</button>
+            </div>
           </div>
-          <a href="#">Change</a>
         </div>
-        <div class="d-flex flex-column gap-3">
-          <button class="btn btn-bright-blue">Proceed to Payment</button>
-          <button class="btn">Cancel Order</button>
-        </div>
-      </div>
-    </div>
       </div>
       <!--Columna 3-->
-      <div class="col d-none d-xxl-block"></div>
+      <div class="col d-sm-none d-xxl-block"></div>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
