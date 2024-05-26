@@ -12459,4 +12459,12 @@ textarea.form-control-lg {
   top: 18px;
   background-color: white;
   padding: 0 20px;
+}
+
+.placeholder2 {
+  position: absolute;
+  left: 350px;
+  top: 15px;
+  background-color: white;
+  padding: 0 20px;
 }/*# sourceMappingURL=styles.css.map */
