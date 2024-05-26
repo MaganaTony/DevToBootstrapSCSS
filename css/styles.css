@@ -12439,8 +12439,24 @@ textarea.form-control-lg {
   font-family: "Red Hat Display", sans-serif;
 }
 
-body {
-  background-color: #F5F5F5;
-  background-position: top;
-  background-repeat: no-repeat;
+.crayons-avatar__image {
+  border-radius: 20px;
+  height: 27px;
+  width: 27px;
+  margin-right: 10px;
+}
+
+#offcanvasNavbar {
+  width: 70%;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.placeholder {
+  position: absolute;
+  left: 115px;
+  top: 18px;
+  background-color: white;
+  padding: 0 20px;
 }/*# sourceMappingURL=styles.css.map */
