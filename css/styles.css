@@ -12468,3 +12468,19 @@ textarea.form-control-lg {
   background-color: white;
   padding: 0 20px;
 }/*# sourceMappingURL=styles.css.map */
+
+.test1 {
+  border: 1px solid black;
+  /*width: 20%; */
+  margin-top: 0px;
+}
+
+.test2 {
+  border: 1px solid black;
+  margin-top: 0px;
+}
+
+.wrapper-body p {
+  font-size: 0.8rem;
+  color: grey;
+}
