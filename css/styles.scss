@@ -13,13 +13,25 @@ $theme-colors: map-merge($theme-colors, (
 //Importar el resto de bootstrap
 @import "../bootstrap/bootstrap.scss";
 
+@mixin placeholderStyle{
+    position: absolute;
+    background-color: white;
+    padding: 0 20px;
+};
+    
 
 *{
     font-family: "Red Hat Display", sans-serif;
 };
 
-body{
-    background-color: #F5F5F5;
-    background-position: top;
-    background-repeat: no-repeat;
-}
+ .placeholder {
+    left: 115px;
+    top: 18px;
+    @include placeholderStyle()
+  }
+
+  .placeholder2{
+    left: 350px;
+    top: 15px;
+    @include placeholderStyle()
+  }
