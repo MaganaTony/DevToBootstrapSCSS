@@ -38,3 +38,6 @@ $theme-colors: map-merge($theme-colors, (
     top: 15px;
     @include placeholderStyle()
   }
+.column__3--card{
+  width: auto;
+}
