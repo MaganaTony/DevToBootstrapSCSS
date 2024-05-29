@@ -33,7 +33,7 @@ $theme-colors: map-merge($theme-colors, (
   }
 
   .placeholder2{
-    left: 350px;
+    left: 230px;
     top: 10px;
     
     @include placeholderStyle()
