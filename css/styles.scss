@@ -15,8 +15,7 @@ $theme-colors: map-merge($theme-colors, (
 
 @mixin placeholderStyle{
     position: absolute;
-    background-color: white;
-    padding: 0 20px;
+    background-color: transparent;
 };
     
 
@@ -28,16 +27,23 @@ $theme-colors: map-merge($theme-colors, (
 };
 
  .placeholder {
-    left: 115px;
-    top: 18px;
+    left: 80px;
+    top: 10px;
     @include placeholderStyle()
   }
 
   .placeholder2{
     left: 350px;
-    top: 15px;
+    top: 10px;
+    
     @include placeholderStyle()
   }
 .column__3--card{
   width: auto;
+  max-width: 30rem;
+}
+
+.middle__card{
+  width: auto;
+  max-width: 55rem;
 }
