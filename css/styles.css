@@ -12443,21 +12443,25 @@ textarea.form-control-lg {
 }
 
 .placeholder {
-  left: 115px;
-  top: 18px;
+  left: 80px;
+  top: 10px;
   position: absolute;
-  background-color: white;
-  padding: 0 20px;
+  background-color: transparent;
 }
 
 .placeholder2 {
-  left: 350px;
-  top: 15px;
+  left: 230px;
+  top: 10px;
   position: absolute;
-  background-color: white;
-  padding: 0 20px;
+  background-color: transparent;
 }
 
 .column__3--card {
   width: auto;
+  max-width: 30rem;
+}
+
+.middle__card {
+  width: auto;
+  max-width: 55rem;
 }/*# sourceMappingURL=styles.css.map */
