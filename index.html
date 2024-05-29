@@ -96,11 +96,11 @@
 
 
   <!--Inicio de container-->
-  <div class="container-fluid p-3 ms-2">
+  <div class="container-fluid p-3 ms-2 ">
     <div class="row">
       <!--Columna 1-->
       <div class="col d-none d-md-block col-md-4 col-lg-2">
-        <div>
+        <div class="col__container">
           <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item"><a class="nav-link">🏠 &nbsp; Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">🗃️ &nbsp; Reading List</a></li>
@@ -129,12 +129,40 @@
             <a href="#" class="mx-2"><img src="./images/svgexport-26.svg" alt="twitch"></a>
             <a href="#" class="mx-2"><img src="./images/svgexport-27.svg" alt="fosstodon"></a>
           </div>
+          <!--Footer Left-->
+          <div class="container-fluid mt-6 fs-s sidebar-footer">
+            <p>
+              <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="/">DEV Community</a>
+              A constructive and inclusive social network for software developers. With you every step of your journey.
+            </p>
+
+            <p class="mt-4">Built on <a class="c-link c-link--branded" target="_blank" rel="noopener" href="#">Forem</a>
+              — the <a target="_blank" rel="noopener" class="c-link c-link--branded" href="#">open source</a> software
+              that powers <a target="_blank" rel="noopener" class="c-link c-link--branded" href="#">DEV</a> and other
+              inclusive communities.
+            </p>
+            <p class="mt-4">Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded"
+                href="#">Ruby on
+                Rails</a>. DEV Community <span title="copyright">©</span> 2016 - 2024.</p>
+            </div>
         </div>
       </div>
-      
+
       <!--Columna 2-->
-      <div class="col-12 col-md-8 col-lg-8">
-        
+      <div class="col-12 col-md-8 col-lg-6">
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active text-reset fw-bold" aria-current="page" href="#">Relevant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-reset" href="#">Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-reset" href="#">Top</a>
+          </li>
+        </ul>
+
         <!--DEV CARD-->
         <div class="card d-flex m-2">
           <nav class="navbar bg-body-tertiary">
@@ -143,24 +171,23 @@
               <button class="navbar-toggler dropdown" type="button" data-bs-toggle="dropdown"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="img-fluid d-block mx-auto"
-                  src="images/svgexport-28.svg" alt="" />
+                <img class="img-fluid d-block mx-auto" src="images/svgexport-28.svg" alt="" />
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#"><img class="m-1"
-                        src="/images/exclamation-circle.svg" alt="" />What's a
+                    <a class="dropdown-item" href="#"><img class="m-1" src="/images/exclamation-circle.svg"
+                        alt="" />What's a
                       billboard?</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"><img class="m-1"
-                        src="images/nut.svg" alt="" />Manage preferences</a>
+                    <a class="dropdown-item" href="#"><img class="m-1" src="images/nut.svg" alt="" />Manage
+                      preferences</a>
                   </li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"><img class="m-1"
-                        src="images/flag.svg" alt="" />Report Billboard</a>
+                    <a class="dropdown-item" href="#"><img class="m-1" src="images/flag.svg" alt="" />Report
+                      Billboard</a>
                   </li>
                 </ul>
               </button>
@@ -193,18 +220,15 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img
-                    src="images/perfiles/people/retrato-hombre-blanco-aislado.jpg"
+                  <img src="images/perfiles/people/retrato-hombre-blanco-aislado.jpg"
                     class="p-1 rounded-circle border border--light" alt="" width="50px" height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="images/web-image_14320329.png" class="p-1" alt=""
-                    width="70px" height="70px" />
+                  <img src="images/web-image_14320329.png" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
-                      <h5 class="card-title m-0 fs-5">Jake Page <img
-                          src="images/creativity_14244191.png" alt="" width="35px"
-                          height="35px"></h5>
+                      <h5 class="card-title m-0 fs-5">Jake Page <img src="images/creativity_14244191.png" alt=""
+                          width="35px" height="35px"></h5>
                       <p class="card-text m-1">for Glasskube</p>
                     </div>
                     <p class="card-text">
@@ -240,20 +264,19 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">43</p>
@@ -266,8 +289,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -279,8 +302,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">11 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -292,12 +315,11 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="images/perfiles/people/64-4326x2884.jpg"
-                    class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                  <img src="images/perfiles/people/64-4326x2884.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="images/perfiles/fondos/853-3000x1993.jpg" class="p-1"
-                    alt="" width="70px" height="70px" />
+                  <img src="images/perfiles/fondos/853-3000x1993.jpg" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Connie Leung</h5>
@@ -315,8 +337,8 @@
           <div class="card-body ms-5 ps-5">
             <h5 class="card-title fw-bold">
               A CSS-only game playable with keyboard!
-              <span> <img class="" src="images/svgexport-35.svg" alt=""
-                  width="40px" /> (No, you are not dreaming) </span>
+              <span> <img class="" src="images/svgexport-35.svg" alt="" width="40px" /> (No, you are not dreaming)
+              </span>
             </h5>
             <div class="hashtag-group">
               <button type="button" class="btn btn-secondary">#showdev</button>
@@ -330,24 +352,23 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-37.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">1500</p>
@@ -360,8 +381,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -373,8 +394,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">38 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -391,8 +412,7 @@
                     class="p-1 rounded-circle border border-1" alt="" width="50px" height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="images/web-development2_7269099.png" class="p-1" alt=""
-                    width="70px" height="70px" />
+                  <img src="images/web-development2_7269099.png" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Fabricio Tiago Arantes</h5>
@@ -425,24 +445,23 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="images/svgexport-37.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">10</p>
@@ -455,8 +474,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -468,8 +487,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">5 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -481,12 +500,11 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/perfiles/people/839-5000x3333.jpg"
-                    class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                  <img src="/images/perfiles/people/839-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/perfiles/fondos/119-3264x2176.jpg" class="p-1"
-                    alt="" width="70px" height="70px" />
+                  <img src="/images/perfiles/fondos/119-3264x2176.jpg" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Dayanne Nguyen</h5>
@@ -517,16 +535,15 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">320</p>
@@ -539,8 +556,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -552,8 +569,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">14 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -565,12 +582,11 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/perfiles/people/786-4288x2848.jpg"
-                    class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                  <img src="/images/perfiles/people/786-4288x2848.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/anguilla_16326949.png" class="p-1" alt=""
-                    width="70px" height="70px" />
+                  <img src="/images/anguilla_16326949.png" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Wafa Bergaoui</h5>
@@ -601,15 +617,14 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">150</p>
@@ -622,8 +637,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -635,8 +650,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">9 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -648,16 +663,14 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/perfiles/people/822-5000x3333.jpg"
-                    class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                  <img src="/images/perfiles/people/822-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/logo-youtube.svg" class="p-1" alt=""
-                    width="70px" height="70px" />
+                  <img src="/images/logo-youtube.svg" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
-                      <h5 class="card-title m-0 fs-5"><img
-                          src="/images/3d-computer_10740609.png" alt="" width="30px"
+                      <h5 class="card-title m-0 fs-5"><img src="/images/3d-computer_10740609.png" alt="" width="30px"
                           height="30px">Karina Babcock</h5>
                       <p class="card-text m-1">for Causely</p>
                     </div>
@@ -686,28 +699,27 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">150</p>
@@ -720,8 +732,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -733,8 +745,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">9 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -746,17 +758,14 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/coding_4893397.png" class="p-1 rounded-circle"
-                    alt="" width="50px" height="50px" />
+                  <img src="/images/coding_4893397.png" class="p-1 rounded-circle" alt="" width="50px" height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/layers_12372237.png" class="p-1" alt=""
-                    width="70px" height="70px" />
+                  <img src="/images/layers_12372237.png" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Optimajet Limited<img class="p-1"
-                          src="/images/coding_12265316.png" alt="" width="30px"
-                          height="30px"></h5>
+                          src="/images/coding_12265316.png" alt="" width="30px" height="30px"></h5>
                       <p class="card-text m-1">for optimajet</p>
                     </div>
                     <p class="card-text">
@@ -784,33 +793,32 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
-                </li>
-                <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg"
-                      alt="" width="25px" height="30px" /></a>
-                </li>
-                <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg"
-                      alt="" width="25px" height="30px" /></a>
-                </li>
-                <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
-                </li>
-                <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
-                </li>
-                <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">2250</p>
                 <p class="info-texto --reactions d-none d-md-block m-1">
@@ -822,8 +830,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -835,8 +843,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">27 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -848,17 +856,15 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/perfiles/people/832-5000x3333.jpg"
-                    class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                  <img src="/images/perfiles/people/832-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/perfiles/fondos/452-4096x2722.jpg" class="p-1"
-                    alt="" width="70px" height="70px" />
+                  <img src="/images/perfiles/fondos/452-4096x2722.jpg" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
-                      <h5 class="card-title m-0 fs-5">Haider Aftab<img class="shadow"
-                          src="/images/svgexport-23.svg" alt="" width="30px"
-                          height="30px"></h5>
+                      <h5 class="card-title m-0 fs-5">Haider Aftab<img class="shadow" src="/images/svgexport-23.svg"
+                          alt="" width="30px" height="30px"></h5>
                       <p class="card-text m-1">for AftV</p>
                     </div>
                     <p class="card-text">
@@ -884,16 +890,15 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">10</p>
@@ -906,8 +911,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -919,8 +924,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">3 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -932,12 +937,10 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/coding_11262382.png" class="p-1 rounded-circle"
-                    alt="" width="50px" height="50px" />
+                  <img src="/images/coding_11262382.png" class="p-1 rounded-circle" alt="" width="50px" height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/arrow-redo.svg" class="p-1" alt="" width="70px"
-                    height="70px" />
+                  <img src="/images/arrow-redo.svg" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Mykhailo Toporkov</h5>
@@ -955,8 +958,7 @@
           <div class="card-body ms-5 ps-5">
             <h5 class="card-title fw-bold">
               Five simple utils that always come in handy in your JavaScript project
-              <img src="/images/icons8-cohete-100.png" alt="" width="60px"
-                height="60px">
+              <img src="/images/icons8-cohete-100.png" alt="" width="60px" height="60px">
             </h5>
             <div class="hashtag-group">
               <button type="button" class="btn btn-outline-dark ">#javascript</button>
@@ -970,13 +972,12 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img
-                      src="/images/icons8-fuego-48.png" alt="" width="25px"
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
                       height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">2</p>
                 <p class="info-texto --reactions d-none d-md-block m-1">
@@ -988,8 +989,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -1001,8 +1002,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -1014,17 +1015,15 @@
             <div class="profile col-md-4 d-flex">
               <div class="body-profile d-flex">
                 <div class="profile_image1 z-2 position-relative p-5 rounded-1">
-                  <img src="/images/perfiles/people/836-5000x3333.jpg"
-                    class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                  <img src="/images/perfiles/people/836-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
                 </div>
                 <div class="profile_image2 z-1 position-absolute p-3 d-flex">
-                  <img src="/images/perfiles/fondos/322-5000x3333.jpg" class="p-1"
-                    alt="" width="70px" height="70px" />
+                  <img src="/images/perfiles/fondos/322-5000x3333.jpg" class="p-1" alt="" width="70px" height="70px" />
                   <div class="card-body p-3 g-col-6">
                     <div class="d-md-inline">
                       <h5 class="card-title m-0 fs-5">Nikkita-------<img class="p-1"
-                          src="/images/programmer_15560150.png" alt="" width="50px"
-                          height="50px"></h5>
+                          src="/images/programmer_15560150.png" alt="" width="50px" height="50px"></h5>
                       <p class="card-text m-1">for Niki</p>
                     </div>
                     <p class="card-text">
@@ -1052,24 +1051,24 @@
             <div class="group-icon">
               <div class="icon-link d-flex m-1 p-2">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="fs-6 m-1">137</p>
                 <p class="info-texto --reactions d-none d-md-block m-1">
@@ -1081,8 +1080,8 @@
             <div class="social-comments m-1 p-2">
               <div class="social-container--comments d-flex justify-content-center align-items-center">
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
                 <p class="info-comments --comments d-none d-md-block m-1">
                   Add Comment
@@ -1094,8 +1093,8 @@
               <div class="social-container--bookmark d-flex justify-content-center align-items-center">
                 <p class="text-center m-1">8 min read</p>
                 <li class="nav-item nav nav-underline">
-                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg"
-                      alt="" width="25px" height="30px" /></a>
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
                 </li>
               </div>
             </div>
@@ -1104,14 +1103,178 @@
       </div>
 
       <!--Columna 3-->
-      <div class="col d-none d-lg-block col-lg-2">
-        <h3>test</h3>
-        <h3>test</h3>
-        <h3>test</h3>
+      <div class="col d-none d-lg-block col-lg ">
+        <div class="d-flex flex-column">
+          <!-- card active discussions (right)-->
+          <div class="column__3--card card col-md-3 border-light-subtle bg-white shadow-sm mt-3 mx-3 py-3 pb-0">
+            <div class="tag-wrapper">
+              <div class="wrapper-body">
+                <ul class="list-unstyled px-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="border-bottom border-light-subtle">
+                        <h5 class="fw-bold">Actice discussions</h5>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Welcome thread</div>
+                        <p class="text-secondary">2 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          Built text summarization application to summarize a web page with Angular
+                            </div>
+                        <p class="text-secondary">3 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          Understanding JavaScript Debounce vs Throttle for Better App Efficiency
+                            </div>
+                        <p class="text-secondary">9 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          Meme Monday
+                            </div>
+                        <p class="text-secondary">44 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          My Newest Discovery: PlayFab
+                            </div>
+                        <p class="text-secondary">1 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- card discuss (right)-->
+          <div class="column__3--card card col-md-3 border-light-subtle bg-white shadow-sm mt-3 mx-3 py-3 pb-0">
+            <div class="tag-wrapper">
+              <div class="wrapper-body">
+                <ul class="list-unstyled px-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="border-bottom border-light-subtle">
+                        <h5 class="fw-bold">#discuss</h5>
+                        <p class="text-secondary">Discussion threads targeting the whole community</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Bootstrap</div>
+                        <span class="badge rounded-pill text-bg-warning text">New</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>OMG my code is dirty? 🤔</div>
+                        <span class="badge rounded-pill text-bg-warning">New</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Web3 and the democratization of the Internet</div>
+                        <p class="text-secondary">49 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>What was your win this week?</div>
+                        <p class="text-secondary">77 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>My first DEV community post</div>
+                        <p class="text-secondary">10 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3 pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Getting started was difficult, but I keep pushing 🤓</div>
+                        <span class="badge rounded-pill text-bg-warning text">New</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- #Watercooler discuss (right) -->
+          <div class="column__3--card card col-md-3 border-light-subtle bg-white shadow-sm mt-3 mx-3 py-3 pb-0">
+            <div class="tag-wrapper">
+              <div class="wrapper-body">
+                <ul class="list-unstyled px-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="border-bottom border-light-subtle">
+                        <h5 class="fw-bold">#watercooler</h5>
+                        <p class="text-secondary">Light, and off-topic conversation.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Meme Monday</div>
+                        <p class="text-secondary">10 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>We need to slow down, Everything is going to fast</div>
+                        <span class="badge rounded-pill text-bg-warning">New</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
   </div>
 </body>
+
+
 
 </html>
