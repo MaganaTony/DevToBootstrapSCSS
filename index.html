@@ -20,7 +20,7 @@
   <!--Navbar-->
   <nav class="navbar bg-white shadow-sm">
     <!--Inicio de container fluid para nav-->
-    <div class="navbar__container container-fluid">
+    <div class="navbar__container container">
       <!-- Seccion izquierda del nav(icono, search bar y burger menu) -->
       <div class="navbar__container--left d-flex">
         <button class="navbar__container--left--Toggler navbar-toggler d-md-none " type="button"
@@ -32,19 +32,19 @@
             style="height: 40px; width: 50px;"
             src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
             alt="DEV Community"></a>
-        <div class="navbar__container--left--searchbar ms-2 d-none d-md-block">
-          <form class="searchbar__form d-flex" role="search">
-            <button class="searchbar__form--button btn position-absolute" id="buttonforsearch" type="submit"><a href="#"
+        <div class="navbar__container--left--searchbar d-none d-md-block">
+          <form class="searchbar__form d-flex position-relative" role="search">
+            <button class="searchbar__form--button btn " id="buttonforsearch" type="submit"><a href="#"
                 class="mx-2"><img src="./images/svgexport-2.svg" alt="search_icon"></a></button>
-            <input class="searchbar__form--input form-control me-2" style="width: 28.5rem;" type="search"
-              aria-label="Search"> <span class="placeholder"> Search</span><span class="placeholder2 fw-lighter fs-6">
-              Powered by <img class="me-1" style="height: .75rem;" src="./images/testSVG.svg"
-                alt="Algolia_icon">Algolia</span>
+            <input class="searchbar__form--input form-control " style="width: 20rem; max-width: 29rem;" type="search"
+              aria-label="Search"> <span class="form-label placeholder"> Search</span><span class="placeholder2 fw-lighter fs-6">
+              Powered by <img style="height: .75rem;" src="./images/testSVG.svg"
+                alt="Algolia_icon">&nbsp; Algolia</span>
           </form>
         </div>
       </div>
       <!-- Seccion derecha del nav(icono, campana y boton de Post) -->
-      <div class="navbar__container--right d-flex flex-nowrap mx-1">
+      <div class="navbar__container--right d-flex">
         <button type="button" class="btn btn-outline-primary fw-bold d-none d-md-block fs-6"><a href="#"></a>Create
           Post</button>
         <a class="mt-1 me-3 d-md-none" href="#" class="mx-2"><img src="./images/svgexport-2.svg" alt="search_icon"></a>
@@ -96,11 +96,11 @@
 
 
   <!--Inicio de container-->
-  <div class="container-fluid p-3 ms-2">
+  <div class="container p-3">
     <div class="row">
       <!--Columna 1-->
-      <div class="col d-none d-md-block">
-        <div>
+      <div class="col d-none d-md-block col-md-4 col-lg-2">
+        <div class="col__container">
           <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item"><a class="nav-link">🏠 &nbsp; Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">🗃️ &nbsp; Reading List</a></li>
@@ -121,42 +121,1160 @@
             <li class="nav-item"><a class="nav-link" href="#">🤓 &nbsp; Privacy Policy</a></li>
             <li class="nav-item"><a class="nav-link" href="#">👀 &nbsp; Terms of use</a></li>
           </ul>
-          <div class="d-inline-flex justify-content-start mx-1 my-4" style="width: 100%;top: 50px;">
-            <a href="#" class="mx-2"><img src="./images/svgexport-22.svg" alt="twitter"></a>
-            <a href="#" class="mx-2"><img src="./images/svgexport-23.svg" alt="facebook"></a>
-            <a href="#" class="mx-2"><img src="./images/svgexport-24.svg" alt="github"></a>
-            <a href="#" class="mx-2"><img src="./images/svgexport-25.svg" alt="instagram"></a>
-            <a href="#" class="mx-2"><img src="./images/svgexport-26.svg" alt="twitch"></a>
-            <a href="#" class="mx-2"><img src="./images/svgexport-27.svg" alt="fosstodon"></a>
+          <div class="d-flex mx-1 my-4 gap-1">
+            <a href="#" ><img src="./images/svgexport-22.svg" alt="twitter"></a>
+            <a href="#" ><img src="./images/svgexport-23.svg" alt="facebook"></a>
+            <a href="#" ><img src="./images/svgexport-24.svg" alt="github"></a>
+            <a href="#" ><img src="./images/svgexport-25.svg" alt="instagram"></a>
+            <a href="#" ><img src="./images/svgexport-26.svg" alt="twitch"></a>
+            <a href="#" ><img src="./images/svgexport-27.svg" alt="fosstodon"></a>
+          </div>
+          <!--Footer Left-->
+          <div class="container mt-6 fs-s sidebar-footer">
+            <p>
+              <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="/">DEV Community</a>
+              A constructive and inclusive social network for software developers. With you every step of your journey.
+            </p>
+
+            <p class="mt-4">Built on <a class="c-link c-link--branded" target="_blank" rel="noopener" href="#">Forem</a>
+              — the <a target="_blank" rel="noopener" class="c-link c-link--branded" href="#">open source</a> software
+              that powers <a target="_blank" rel="noopener" class="c-link c-link--branded" href="#">DEV</a> and other
+              inclusive communities.
+            </p>
+            <p class="mt-4">Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded"
+                href="#">Ruby on
+                Rails</a>. DEV Community <span title="copyright">©</span> 2016 - 2024.</p>
+            </div>
+        </div>
+      </div>
+
+      <!--Columna 2-->
+      <div class="col-12 col-md-8 col-lg-6">
+        <!--Upper links for posts-->
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active text-reset fw-bold" aria-current="page" href="#">Relevant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-reset" href="#">Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-reset" href="#">Top</a>
+          </li>
+        </ul>
+
+        <!--DEV CARD-->
+        <div class="middle__card card d-flex m-2">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid d-flex align-items-center dropstart">
+              <span class="navbar-brand fs-6"> DEV Community </span>
+              <button class="navbar-toggler dropdown" type="button" data-bs-toggle="dropdown"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img class="img-fluid d-block mx-auto" src="images/svgexport-28.svg" alt="" />
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"><img class="m-1" src="/images/exclamation-circle.svg"
+                        alt="" />What's a
+                      billboard?</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><img class="m-1" src="images/nut.svg" alt="" />Manage
+                      preferences</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><img class="m-1" src="images/flag.svg" alt="" />Report
+                      Billboard</a>
+                  </li>
+                </ul>
+              </button>
+            </div>
+          </nav>
+          <img src="images/dev_need_2_stay_up.png" class="card-img-top" alt="..." />
+          <div class="card-body figure-img img-fluid rounded">
+            <h5 class="card-title fw-bold">
+              Need to stay up-to-date with the most relevant trends in software,
+              such as generate AI, cloud computing, and all things frontend?
+            </h5>
+            <br />
+            <p class="card-text">
+              DEV is free and it only takes one minute to create your account.
+            </p>
+          </div>
+          <div class="card-body-footer p-3">
+            <a href="#" class="card-link fs-5 fw-bold">Join the community</a>
+            <div class="d-flex p-1">
+              <p class="">Happy coding</p>
+              <span>
+                <img src="images/svgexport-12.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <!--JAKE PAGE-->
+        <div class="middle__card card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="images/perfiles/people/retrato-hombre-blanco-aislado.jpg"
+                    class="p-1 rounded-circle border border--light" alt="" width="50px" height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="images/web-image_14320329.png" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Jake Page <img src="images/creativity_14244191.png" alt=""
+                          width="35px" height="35px"></h5>
+                      <p class="card-text m-1">for Glasskube</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 27</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              kubernetes fail compilation: but they kepp getting worse
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline-primary">
+                #kubernetes
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                #devops
+              </button>
+              <button type="button" class="btn btn-outline-success">
+                #opensource
+              </button>
+              <button type="button" class="btn btn-outline-danger">
+                #learning
+              </button>
+            </div>
+          </div>
+          <!--KUBERNETES REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-5 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">43</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READ-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">11 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--CONNIE LEUNG PROFILE CARD-->
+        <div class="middle__card card m-2 ">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="images/perfiles/people/64-4326x2884.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="images/perfiles/fondos/853-3000x1993.jpg" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Connie Leung</h5>
+                      <p class="card-text m-1">for ConL</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 24</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              A CSS-only game playable with keyboard!
+              <span> <img class="" src="images/svgexport-35.svg" alt="" width="40px" /> (No, you are not dreaming)
+              </span>
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-secondary">#showdev</button>
+              <button type="button" class="btn btn-outline">#css</button>
+              <button type="button" class="btn btn-outline">#html</button>
+              <button type="button" class="btn btn-outline">#webdev</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">1500</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">38 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FABRICIO TIAGO ARANTES-->
+        <div class="middle__card card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img
+                    src="images/perfiles/people/moda-masculina-lentes-cara-hombre-carametria-caramorfoligia-consultoria-de-imagen.jpg"
+                    class="p-1 rounded-circle border border-1" alt="" width="50px" height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="images/web-development2_7269099.png" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Fabricio Tiago Arantes</h5>
+                      <p class="card-text m-1"></p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 21</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              O nascimento da linguagem de programaçāo Java
+              <span> <img src="" alt="" /> (No, you are not dreaming) </span>
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline-primary">#java</button>
+              <button type="button" class="btn btn-outline-info">#begginers</button>
+              <button type="button" class="btn btn-outline-warning">
+                #programming
+              </button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">10</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">5 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--DAYANNE NUGUYEN-->
+        <div class="middle__card card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/perfiles/people/839-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/perfiles/fondos/119-3264x2176.jpg" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Dayanne Nguyen</h5>
+                      <p class="card-text m-1"></p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 19</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              ¿Qué está pasando con Gemini AI de Google?
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline">#google</button>
+              <button type="button" class="btn btn-outline spinner-grow">#js</button>
+              <button type="button" class="btn btn-outline">#AI</button>
+              <button type="button" class="btn btn-outline shadow">#webdev</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">320</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READ-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">14 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--WAFA BERGAOUI-->
+        <div class="middle__card card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/perfiles/people/786-4288x2848.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/anguilla_16326949.png" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Wafa Bergaoui</h5>
+                      <p class="card-text m-1">for Causely</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 17</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              Staying Up-to-Date with the Latest AI Developments and Trends
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline">#ai</button>
+              <button type="button" class="btn btn-outline">#development</button>
+              <button type="button" class="btn btn-outline">#machinelearning</button>
+              <button type="button" class="btn btn-outline">#programming</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">150</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">9 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--KARINA BABCOCK-->
+        <div class="middle__card card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/perfiles/people/822-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/logo-youtube.svg" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5"><img src="/images/3d-computer_10740609.png" alt="" width="30px"
+                          height="30px">Karina Babcock</h5>
+                      <p class="card-text m-1">for Causely</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 16</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              Bridging the Gap Between Observability and Automation with casual Reasoning
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline">#devops</button>
+              <button type="button" class="btn btn-outline">#automation</button>
+              <button type="button" class="btn btn-outline">#observability</button>
+              <button type="button" class="btn btn-outline-primary">#developer</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">150</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">9 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--OPTIMAJET LIMITED-->
+        <div class="middle__card card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/coding_4893397.png" class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/layers_12372237.png" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Optimajet Limited<img class="p-1"
+                          src="/images/coding_12265316.png" alt="" width="30px" height="30px"></h5>
+                      <p class="card-text m-1">for optimajet</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 11</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              Optimajet Data Engine 1.0.0: Open Source Workflow Engine Component alpha release
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline spinner-grow text-success">#Java</button>
+              <button type="button" class="btn btn-outline-warning">#opensource</button>
+              <button type="button" class="btn btn-outline ">#workflow</button>
+              <button type="button" class="btn btn-outline shadow">#workflowengine</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-37.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">2250</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">27 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--HAIDER AFTAB-->
+        <div class="card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/perfiles/people/832-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/perfiles/fondos/452-4096x2722.jpg" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Haider Aftab<img class="shadow" src="/images/svgexport-23.svg"
+                          alt="" width="30px" height="30px"></h5>
+                      <p class="card-text m-1">for AftV</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 10</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              Post-Processing Effects with Shaders: Enhancing Rendered Scenes with Post-Processing Effects
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-dark-blue">#gamadev</button>
+              <button type="button" class="btn btn-outline-desaturated-blue">#shader</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">10</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">3 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--MYHILO TOPORKOV-->
+        <div class="card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/coding_11262382.png" class="p-1 rounded-circle" alt="" width="50px" height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/arrow-redo.svg" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Mykhailo Toporkov</h5>
+                      <p class="card-text m-1">for MyTo</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 9</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              Five simple utils that always come in handy in your JavaScript project
+              <img src="/images/icons8-cohete-100.png" alt="" width="60px" height="60px">
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline-dark ">#javascript</button>
+              <button type="button" class="btn btn-outline-dark">#node</button>
+              <button type="button" class="btn btn-outline-dark ">#utils</button>
+              <button type="button" class="btn btn-outline-dark ">#learning</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/icons8-fuego-48.png" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">2</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--NIKKITA-->
+        <div class="card m-2">
+          <div class="row g-0 align-items-center">
+            <div class="profile col-md-4 d-flex">
+              <div class="body-profile d-flex">
+                <div class="profile_image1 z-2 position-relative p-5 rounded-1">
+                  <img src="/images/perfiles/people/836-5000x3333.jpg" class="p-1 rounded-circle" alt="" width="50px"
+                    height="50px" />
+                </div>
+                <div class="profile_image2 z-1 position-absolute p-3 d-flex">
+                  <img src="/images/perfiles/fondos/322-5000x3333.jpg" class="p-1" alt="" width="70px" height="70px" />
+                  <div class="card-body p-3 g-col-6">
+                    <div class="d-md-inline">
+                      <h5 class="card-title m-0 fs-5">Nikkita-------<img class="p-1"
+                          src="/images/programmer_15560150.png" alt="" width="50px" height="50px"></h5>
+                      <p class="card-text m-1">for Niki</p>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">May 7</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--CARD BODY-->
+          <div class="card-body ms-5 ps-5">
+            <h5 class="card-title fw-bold">
+              How 'npm create vue@latest' works
+            </h5>
+            <div class="hashtag-group">
+              <button type="button" class="btn btn-outline-secondary">#vue</button>
+              <button type="button" class="btn btn-outline-warning">#webdev</button>
+              <button type="button" class="btn btn-outline-success">#javascript</button>
+              <button type="button" class="btn btn-outline shadow">#learning</button>
+            </div>
+          </div>
+          <!--REACTIONS-->
+          <div class="reactions-icons d-flex mb-3 ms-4 ps-5">
+            <div class="group-icon">
+              <div class="icon-link d-flex m-1 p-2">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-12.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-35.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-36.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-14.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-21.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="fs-6 m-1">137</p>
+                <p class="info-texto --reactions d-none d-md-block m-1">
+                  reactions
+                </p>
+              </div>
+            </div>
+            <!--COMMENTS-->
+            <div class="social-comments m-1 p-2">
+              <div class="social-container--comments d-flex justify-content-center align-items-center">
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-61.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+                <p class="info-comments --comments d-none d-md-block m-1">
+                  Add Comment
+                </p>
+              </div>
+            </div>
+            <!--READERS-->
+            <div class="social-bookmark m-1 m-lg-1 p-2">
+              <div class="social-container--bookmark d-flex justify-content-center align-items-center">
+                <p class="text-center m-1">8 min read</p>
+                <li class="nav-item nav nav-underline">
+                  <a class="nav-link" href="#"><img src="/images/svgexport-40.svg" alt="" width="25px"
+                      height="30px" /></a>
+                </li>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
-      <!--Columna 2-->
-     
-      <ul class="nav col-md-3 ">
-        <li class="nav-item">
-          <a class="nav-link active h3  " aria-current="page" href="#">Relevant</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h3" href="#">Latest</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link h3" href="#">Top</a>
-        </li>
-       
-      </ul>
-     
-    <div class="container container-custom  col-md-5 ">
-      <div class="card card-custom">
-          <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?q=80&w=2585&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Post Image">
-          
-          
-      </div>
+
       <!--Columna 3-->
-      <div class="col d-sm-none d-xxl-block"></div>
+      <div class="col d-none d-lg-block col-lg ">
+        <div class="d-flex flex-column">
+          <!-- card active discussions (right)-->
+          <div class="column__3--card card col-md-3 border-light-subtle bg-white shadow-sm mt-3 mx-3 py-3 pb-0">
+            <div class="tag-wrapper">
+              <div class="wrapper-body">
+                <ul class="list-unstyled px-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="border-bottom border-light-subtle">
+                        <h5 class="fw-bold">Actice discussions</h5>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Welcome thread</div>
+                        <p class="text-secondary">2 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          Built text summarization application to summarize a web page with Angular
+                            </div>
+                        <p class="text-secondary">3 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          Understanding JavaScript Debounce vs Throttle for Better App Efficiency
+                            </div>
+                        <p class="text-secondary">9 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          Meme Monday
+                            </div>
+                        <p class="text-secondary">44 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>
+                          My Newest Discovery: PlayFab
+                            </div>
+                        <p class="text-secondary">1 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- card discuss (right)-->
+          <div class="column__3--card card col-md-3 border-light-subtle bg-white shadow-sm mt-3 mx-3 py-3 pb-0">
+            <div class="tag-wrapper">
+              <div class="wrapper-body">
+                <ul class="list-unstyled px-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="border-bottom border-light-subtle">
+                        <h5 class="fw-bold">#discuss</h5>
+                        <p class="text-secondary">Discussion threads targeting the whole community</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Bootstrap</div>
+                        <span class="badge rounded-pill text-bg-warning text">New</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>OMG my code is dirty? 🤔</div>
+                        <span class="badge rounded-pill text-bg-warning">New</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Web3 and the democratization of the Internet</div>
+                        <p class="text-secondary">49 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>What was your win this week?</div>
+                        <p class="text-secondary">77 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>My first DEV community post</div>
+                        <p class="text-secondary">10 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3 pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Getting started was difficult, but I keep pushing 🤓</div>
+                        <span class="badge rounded-pill text-bg-warning text">New</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- #Watercooler discuss (right) -->
+          <div class="column__3--card card col-md-3 border-light-subtle bg-white shadow-sm mt-3 mx-3 py-3 pb-0">
+            <div class="tag-wrapper">
+              <div class="wrapper-body">
+                <ul class="list-unstyled px-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">
+                      <div class="border-bottom border-light-subtle">
+                        <h5 class="fw-bold">#watercooler</h5>
+                        <p class="text-secondary">Light, and off-topic conversation.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle pt-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>Meme Monday</div>
+                        <p class="text-secondary">10 comments</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="border-bottom border-light-subtle py-3">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <div>We need to slow down, Everything is going to fast</div>
+                        <span class="badge rounded-pill text-bg-warning">New</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </body>
+
+
 
 </html>
