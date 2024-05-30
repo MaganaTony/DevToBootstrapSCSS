@@ -19,178 +19,83 @@
   </head>
 
   <body class="bg-body-tertiary">
-    <!--Navbar-->
-    <nav class="navbar bg-white shadow-sm">
-      <!--Inicio de container fluid para nav-->
-      <div class="navbar__container container-fluid">
-        <!-- Seccion izquierda del nav(icono, search bar y burger menu) -->
-        <div class="navbar__container--left d-flex">
-          <button
-            class="navbar__container--left--Toggler navbar-toggler d-md-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a href="#" class="navbar__container--left--logo logo__button--header"
-            ><img
-              class="site-logo__img"
-              style="height: 40px; width: 50px"
-              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-              alt="DEV Community"
-          /></a>
-          <div
-            class="navbar__container--left--searchbar ms-2 d-none d-md-block"
-          >
-            <form class="searchbar__form d-flex" role="search">
-              <button
-                class="searchbar__form--button btn position-absolute"
-                id="buttonforsearch"
-                type="submit"
-              >
-                <a href="#" class="mx-2"
-                  ><img src="./images/svgexport-2.svg" alt="search_icon"
-                /></a>
-              </button>
-              <input
-                class="searchbar__form--input form-control me-2"
-                style="width: 28.5rem"
-                type="search"
-                aria-label="Search"
-              />
-              <span class="placeholder"> Search</span
-              ><span class="placeholder2 fw-lighter fs-6">
-                Powered by
-                <img
-                  class="me-1"
-                  style="height: 0.75rem"
-                  src="./images/testSVG.svg"
-                  alt="Algolia_icon"
-                />Algolia</span
-              >
-            </form>
-          </div>
+
+  <!--Navbar-->
+  <nav class="navbar sticky-top bg-white shadow-sm">
+    <!--Inicio de container fluid para nav-->
+    <div class="navbar__container container">
+      <!-- Seccion izquierda del nav(icono, search bar y burger menu) -->
+      <div class="navbar__container--left d-flex">
+        <button class="navbar__container--left--Toggler navbar-toggler d-md-none " type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="./index.html" class="navbar__container--left--logo logo__button--header"><img class="site-logo__img"
+            style="height: 40px; width: 50px;"
+            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt="DEV Community"></a>
+        <div class="navbar__container--left--searchbar d-none d-md-block">
+          <form class="searchbar__form d-flex position-relative" role="search">
+            <button class="searchbar__form--button btn " id="buttonforsearch" type="submit"><a href="#"
+                class="mx-2"><img src="./images/svgexport-2.svg" alt="search_icon"></a></button>
+            <input class="searchbar__form--input form-control " style="width: 20rem; max-width: 29rem;" type="search"
+              aria-label="Search"> <span class="form-label placeholder"> Search</span><span class="placeholder2 fw-lighter fs-6">
+              Powered by <img style="height: .75rem;" src="./images/testSVG.svg"
+                alt="Algolia_icon">&nbsp; Algolia</span>
+          </form>
         </div>
-        <!-- Seccion derecha del nav(icono, campana y boton de Post) -->
-        <div class="navbar__container--right d-flex flex-nowrap mx-1">
-          <button
-            type="button"
-            class="btn btn-outline-primary fw-bold d-none d-md-block fs-6"
-          >
-            <a href="#"></a>Create Post
-          </button>
-          <a class="mt-1 me-3 d-md-none" href="#" class="mx-2"
-            ><img src="./images/svgexport-2.svg" alt="search_icon"
-          /></a>
-          <a href="#" class="mx-2 mt-1"
-            ><img src="./images/bell_icon.svg" alt="bell_icon"
-          /></a>
-          <a href="#" class="mx-2"
-            ><img
-              class="img-thumbnail rounded-5"
-              style="width: 2.3rem"
-              alt=""
-              id="nav-profile-image"
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ay3RvrXi--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/975225/4f71a4bb-4099-4ccf-9a89-f755a94da6b9.png"
-          /></a>
+      </div>
+      <!-- Seccion derecha del nav(icono, campana y boton de Post) -->
+      <div class="navbar__container--right d-flex">
+        <button type="button" class="btn btn-outline-primary fw-bold d-none d-md-block fs-6"><a href="#"></a>Create
+          Post</button>
+        <a class="mt-1 me-3 d-md-none" href="#" class="mx-2"><img src="./images/svgexport-2.svg" alt="search_icon"></a>
+        <a href="#" class="mx-2 mt-1"><img src="./images/bell_icon.svg" alt="bell_icon"></a>
+        <a href="#" class="mx-2"><img class="img-thumbnail rounded-5" style="width: 2.3rem;" alt=""
+            id="nav-profile-image"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ay3RvrXi--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/975225/4f71a4bb-4099-4ccf-9a89-f755a94da6b9.png"></a>
+      </div>
+      <!-- Seccion offcanvas, osea menu del burger menu -->
+      <div class="navbar__container--offcanvas offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-weight: bold;">DEV Community</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <!-- Seccion offcanvas, osea menu del burger menu -->
-        <div
-          class="navbar__container--offcanvas offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
-          <div class="offcanvas-header">
-            <h5
-              class="offcanvas-title"
-              id="offcanvasNavbarLabel"
-              style="font-weight: bold"
-            >
-              DEV Community
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item"><a class="nav-link">🏠Home</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🗃️Reading List</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">📃Listings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🎙️Podcasts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🎥Videos</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">🏷️Tags</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🛍️Forem Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">❤️Sponsors</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">🏳️‍🌈About</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">📯Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">📖Guides</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🤔Software comparisons</a>
-              </li>
-            </ul>
-            <h5 class="my-3" style="font-weight: bold">Other</h5>
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="#">👍Code of Conduct</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">🤓Privacy Policy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">👀Terms of use</a>
-              </li>
-            </ul>
-            <div
-              class="d-inline-flex justify-content-start mx-1 my-4"
-              style="width: 100%; top: 50px"
-            >
-              <a href="#" class="mx-2"
-                ><img src="./images/svgexport-22.svg" alt="twitter"
-              /></a>
-              <a href="#" class="mx-2"
-                ><img src="./images/svgexport-23.svg" alt="facebook"
-              /></a>
-              <a href="#" class="mx-2"
-                ><img src="./images/svgexport-24.svg" alt="github"
-              /></a>
-              <a href="#" class="mx-2"
-                ><img src="./images/svgexport-25.svg" alt="instagram"
-              /></a>
-              <a href="#" class="mx-2"
-                ><img src="./images/svgexport-26.svg" alt="twitch"
-              /></a>
-              <a href="#" class="mx-2"
-                ><img src="./images/svgexport-27.svg" alt="fosstodon"
-              /></a>
-            </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link">🏠Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🗃️Reading List</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">📃Listings</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🎙️Podcasts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🎥Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🏷️Tags</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🛍️Forem Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">❤️Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🏳️‍🌈About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">📯Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">📖Guides</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🤔Software comparisons</a></li>
+          </ul>
+          <h5 class="my-3" style="font-weight: bold;">Other</h5>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link" href="#">👍Code of Conduct</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">🤓Privacy Policy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">👀Terms of use</a></li>
+          </ul>
+          <div class="d-inline-flex justify-content-start mx-1 my-4" style="width: 100%;top: 50px;">
+            <a href="#" class="mx-2"><img src="./images/svgexport-22.svg" alt="twitter"></a>
+            <a href="#" class="mx-2"><img src="./images/svgexport-23.svg" alt="facebook"></a>
+            <a href="#" class="mx-2"><img src="./images/svgexport-24.svg" alt="github"></a>
+            <a href="#" class="mx-2"><img src="./images/svgexport-25.svg" alt="instagram"></a>
+            <a href="#" class="mx-2"><img src="./images/svgexport-26.svg" alt="twitch"></a>
+            <a href="#" class="mx-2"><img src="./images/svgexport-27.svg" alt="fosstodon"></a>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!--Inicio de container-->
     <div class="container-fluid p-3 ms-2">
@@ -335,10 +240,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-reset" href="#">Latest</a>
+              <a class="nav-link text-reset" href="./latest.html">Latest</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-reset" href="#">Top</a>
+              <a class="nav-link text-reset" href="./top.html">Top</a>
             </li>
           </ul>
 
@@ -1911,7 +1816,7 @@
                     <li>
                       <a href="#" class="text-decoration-none text-dark">
                         <div class="border-bottom border-light-subtle">
-                          <h5 class="fw-bold">Actice discussions</h5>
+                          <h5 class="fw-bold">Active discussions</h5>
                         </div>
                       </a>
                     </li>
