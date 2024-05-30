@@ -47,3 +47,12 @@ $theme-colors: map-merge($theme-colors, (
   width: auto;
   max-width: 55rem;
 }
+
+.btn-light:hover {
+  background-color: #FFFFFF;
+  border: none;
+  color: blue;
+}
+.popular-tags>div:hover {
+  background-color: rgba(8, 20, 190, 0.2);
+}

@@ -12464,4 +12464,14 @@ textarea.form-control-lg {
 .middle__card {
   width: auto;
   max-width: 55rem;
+}
+
+.btn-light:hover {
+  background-color: #FFFFFF;
+  border: none;
+  color: blue;
+}
+
+.popular-tags > div:hover {
+  background-color: rgba(8, 20, 190, 0.2);
 }/*# sourceMappingURL=styles.css.map */
